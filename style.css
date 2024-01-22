@@ -34,7 +34,14 @@
     padding: 40px;
     border-radius: 10px;
 }
-
+.login-form2 {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 10px;
+}
 
 .row,
 .input {
@@ -224,12 +231,22 @@
     .container,
     .container2,
     .list-box,
-    .login-form,
     .row,
     .input {
         padding: 10px;
     }
-
+    .login-form{
+        padding: 50px;
+    }
+    .login-form2{
+        padding: 30px;
+    }
+     .login-form2 h2{
+        padding-left: 65px;
+     }
+     .login-form2 a{
+        margin-left: -30px;
+     }
     .header h1 {
         padding-top: 30px;
         margin-top: 30px;
