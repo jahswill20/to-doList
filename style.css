@@ -1,0 +1,263 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+
+.container,
+.container2 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fdf0d5;
+    padding: 10px;
+}
+
+
+.header h1 {
+    color: #c1121f;
+    text-align: left;
+    margin-top: 50px;
+    padding-top: 70px;
+    padding-left: 20px;
+}
+
+
+.login-form {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+
+.row,
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.row input,
+.input input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.row button,
+.input button {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #002765;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.row button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.row button:hover {
+    background-color: #001a3d;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row2 a {
+    text-decoration: none;
+    color: #002765;
+    font-weight: 600;
+}
+
+.list-box {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+
+.input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.input input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; 
+    box-sizing: border-box;
+    background-color: rgba(177, 189, 209, 0.5);
+}
+
+.input input::content {
+    color: black;
+}
+
+.input button {
+    width: 100%; 
+    height: 38px;
+    background-color: #73a3ef;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: -20px;
+    padding: 10px 20px;
+    position: relative;
+    left: -5px;
+    cursor: pointer;
+}
+
+.display {
+    margin-top: 20px;
+}
+
+#list-item {
+    list-style: none;
+}
+
+#list-item li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#list-item li button {
+    width: 60px;
+    height: 38px;
+    background-color: #73a3ef;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 5px;
+    color: #fafafa;
+}
+
+#list-item li button:hover {
+    background-color: rgb(200, 40, 40);
+}
+
+
+.headinglogo {
+    margin: 5px auto 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.headinglogo img {
+    height: 8em;
+    border-radius: 50px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.headinglogo img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.clear-all {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.clear-all button {
+    height: 30px;
+    width: 80px;
+    border: none;
+    background-color: #c1121f;
+    border-radius: 20px;
+    color: #fafafa;
+    margin-top: 10px;
+}
+.clear-all button:hover{
+    height: 40px;
+    width: 100px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .row,
+    .input {
+        padding: 10px;
+    }
+
+    
+    
+    .row input {
+        width: 100%;
+    }
+    #createAccountidform button {
+        margin-left: -1px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container,
+    .container2,
+    .list-box,
+    .login-form,
+    .row,
+    .input {
+        padding: 10px;
+    }
+
+    .header h1 {
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+
+    .row input,
+    .input input {
+        width: 100%;
+        margin-left: -16px;
+    }
+
+    .row button,
+    .input button {
+        width: 100%;
+        margin-left: -7px;
+    }
+
+    .headinglogo img {
+        height: 6em;
+    }
+    #createAccountidform {
+        display: flex;
+        flex-direction: column;
+    }
+#todoId {
+    width: 100%;
+}
+#createAccountidform button{
+    margin-left: -17px;
+}
+}
